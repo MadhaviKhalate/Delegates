@@ -13,8 +13,8 @@ namespace DelegateProblem
         {
             DelegateOp[] obj =
             {
-                new DelegateOp(DelegateProblem.Operations.Addition),
-                new DelegateOp(DelegateProblem.Operations.Multiplication)
+                new DelegateOp(DelegateProblem.Operations.Add),
+                new DelegateOp(DelegateProblem.Operations.Mul)
             };
             for (int i = 0; i < obj.Length; i++)
             {

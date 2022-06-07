@@ -8,15 +8,27 @@ namespace DelegateProblem
 {
     internal class Operations
     {
-        public static void Addition(int a, int b)
+        public static void Add(int a, int b)
         {
-            int sum = a + b;
-            Console.WriteLine("Sum of two no. is: " + sum);
+            Console.WriteLine("Addition={0}", a + b);
         }
-        public static void Multiplication(int a, int b)
+        public static void Mul(int a, int b)
         {
-            int mul = a * b;
-            Console.WriteLine("Multiplication of two no. is: " + mul);
+            Console.WriteLine("Multiply={0}", a * b);
+        }
+
+        public event EventHandler xyz;
+        public void Action(string a)
+        {
+            if (xyz != null)
+            {
+                xyz(a);
+                Console.WriteLine(a);
+            }
+            else
+            {
+                Console.WriteLine("Not Registered");
+            }
         }
     }
 }
