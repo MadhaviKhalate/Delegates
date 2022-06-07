@@ -1,0 +1,1 @@
+﻿DelegateProblem.ArrayDelegates.ImplementDelegate();
